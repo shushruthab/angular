@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-anim/feature/account-summary": [
+        "libs/feature/account-summary/src/index.ts"
+      ],
+      "@angular-anim/shared/models": ["libs/shared/models/src/index.ts"],
+      "@angular-anim/shared/presentational": [
+        "libs/shared/presentational/src/index.ts"
+      ],
+      "@angular-anim/shared/services": ["libs/shared/services/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
