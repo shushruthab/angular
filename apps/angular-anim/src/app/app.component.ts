@@ -1,5 +1,7 @@
 import { SideNavItem } from '@angular-anim/shared/presentational';
+import { UserFacade } from '@angular-anim/shared/store';
 import { Component, OnInit } from '@angular/core';
+import { startWith } from 'rxjs';
 
 @Component({
   selector: 'angular-anim-root',
@@ -8,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   sideNavItems: SideNavItem[] = [];
+  user$ = this.userFacade.getUser();
+  userName$ = this.userFacade.getUserName().pipe(
+    startWith('Not Logged In'),
+  )
+
+  constructor(private userFacade: UserFacade) { }
 
   ngOnInit() {
     this.sideNavItems = [

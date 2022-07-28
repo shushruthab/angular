@@ -7,6 +7,8 @@ import { FeaturePresentationalModule } from '@angular-anim/shared/presentational
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FeatureAccountSummaryModule } from '@angular-anim/feature/account-summary';
+import { SharedStoreModule } from '@angular-anim/shared/store';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [AppComponent, AboutComponent],
@@ -16,6 +18,8 @@ import { FeatureAccountSummaryModule } from '@angular-anim/feature/account-summa
     AppRoutingModule,
     FeaturePresentationalModule,
     FeatureAccountSummaryModule,
+    SharedStoreModule,
+    StoreModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent],

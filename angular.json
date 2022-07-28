@@ -7,6 +7,7 @@
     "feature-account-summary": "libs/feature/account-summary",
     "shared-models": "libs/shared/models",
     "shared-presentational": "libs/shared/presentational",
-    "shared-services": "libs/shared/services"
+    "shared-services": "libs/shared/services",
+    "shared-store": "libs/shared/store"
   }
 }

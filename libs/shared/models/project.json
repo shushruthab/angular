@@ -6,9 +6,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "libs/shared/models/**/*.ts"
-        ]
+        "lintFilePatterns": ["libs/shared/models/**/*.ts"]
       }
     }
   },

@@ -22,7 +22,8 @@
       "@angular-anim/shared/presentational": [
         "libs/shared/presentational/src/index.ts"
       ],
-      "@angular-anim/shared/services": ["libs/shared/services/src/index.ts"]
+      "@angular-anim/shared/services": ["libs/shared/services/src/index.ts"],
+      "@angular-anim/shared/store": ["libs/shared/store/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
