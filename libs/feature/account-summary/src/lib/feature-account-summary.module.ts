@@ -8,6 +8,6 @@ import { AccountSummaryComponent } from './account-summary/account-summary.compo
 @NgModule({
   imports: [CommonModule, AccountSummaryRoutingModule, FormsModule],
   declarations: [AccountSummaryComponent],
-  exports: [AccountSummaryComponent]
+  exports: [AccountSummaryComponent],
 })
 export class FeatureAccountSummaryModule {}

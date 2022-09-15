@@ -1,6 +1,6 @@
 /** 
- * TODO: 10. Angular (NX) Architecture
- * TODO: 11. Asynchronous Programming (RxJS)
+ * TODO: 10. Asynchronous Programming (RxJS)
+ * TODO: 13. Angular (NX) Architecture
 */
 import { Component, OnInit } from '@angular/core';
 import { Account } from 'libs/shared/services/src/lib/account';
@@ -17,6 +17,7 @@ export class AccountSummaryComponent implements OnInit {
   constructor(private accountService: AccountService) {}
   accounts: Account[] = [];
   accountsFilter = '';
+
   ngOnInit(): void {
     this.accountService.getAccounts().subscribe((accounts) => {
       this.accounts = accounts;
